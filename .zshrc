@@ -26,9 +26,9 @@ PS1='%{$fg[cyan]%}%~%{$fg[white]%}%#'
 # End of lines added by compinstall
 
 # some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -l --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
