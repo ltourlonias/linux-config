@@ -1,0 +1,9 @@
+nnoremap <leader>ev :vsplit $MYVIMRC.last<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>p :cp<cr>
+nnoremap <leader>n :cn<cr>
+nnoremap <leader>o o<esc>
+nnoremap <leader>O O<esc>
+inoremap jk <esc>
+inoremap <esc> <nop>
+set diffopt+=iwhite

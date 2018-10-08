@@ -43,6 +43,9 @@ set nocompatible
     " Edit files using sudo/su
     Plugin 'chrisbra/SudoEdit.vim'
 
+    " Man vim
+    Plugin 'vim-utils/vim-man'
+
     " <Tab> everything!
     Plugin 'ervandew/supertab'
 
@@ -424,6 +427,9 @@ set nocompatible
                             \ <SID>StripTrailingWhitespace()
             augroup END
         """ }}}
+
+        """ vim-man key binding
+        nnoremap K :Vman <C-r><C-w><CR>
     """ }}}
     """ Plugins {{{
         " Toggle tagbar (definitions, functions etc.)

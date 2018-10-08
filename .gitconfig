@@ -13,9 +13,11 @@ lg = !"git lg1"
 [color]
 	ui = true
 [user]
-	name = ltourlonias
-	email = loic.tourlonias@ingenico.com
+	name = Loic Tourlonias
+	email = loic.tourlonias.lkml@gmail.com
 [core]
 	editor = vim
 [push]
 	default = current
+[merge]
+	tool = vimdiff
