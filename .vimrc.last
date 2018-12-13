@@ -7,3 +7,12 @@ nnoremap <leader>O O<esc>
 inoremap jk <esc>
 inoremap <esc> <nop>
 set diffopt+=iwhite
+
+"Unite
+nnoremap <silent> ! 
+    \ :<C-u>Unite -buffer-name=search%`bufnr('%')`
+    \ -auto-preview -start-insert line<CR>
+
+nnoremap <silent> * 
+    \ :<C-u>Unite -buffer-name=search%`bufnr('%')`
+    \ -auto-preview -start-insert -input=<C-r><C-w> line<CR>

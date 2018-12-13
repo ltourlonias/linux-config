@@ -19,3 +19,5 @@ install_dotfile .bashrc
 install_dotfile .gitconfig
 install_dotfile .profile
 install_dotfile .vimrc
+install_dotfile .vimrc.last
+install_dotfile .vimrc.plugins

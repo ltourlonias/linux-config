@@ -97,6 +97,12 @@ set nocompatible
     " REQUIREMENTS: (exuberant)-ctags
     Plugin 'majutsushi/tagbar'
 
+    " Unite
+    Plugin 'shougo/unite.vim'
+    Plugin 'ujihisa/unite-locate'
+    Plugin 'shougo/neomru.vim'
+    Plugin 'shougo/vimproc.vim'
+
     " Finish Vundle stuff
     call vundle#end()
 
