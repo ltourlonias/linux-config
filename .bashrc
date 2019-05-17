@@ -90,6 +90,19 @@ alias la='ls -A --color=auto'
 alias l='ls -CF --color=auto'
 alias grep='grep --color=auto'
 
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias span='cd ~/telium3/softwareplatform/application/native'
+alias sskl='cd ~/telium3/softwaresystem/kernel/linux-3.10-islero'
+alias sskm='cd ~/telium3/softwaresystem/kernel/modules-islero'
+alias sst='cd ~/telium3/softwaresystem/telinux'
+alias sslol='cd ~/telium3/softwaresystem/linux/openembedded/lingot'
+alias tools='cd ~/telium3/tools/sdk-utils'
+alias oemc='cd ~/telium3/softwaresystem/telinux/modules/peripherals/serial/OemSerial_Server'
+alias tmux='tmux -2'
+alias gti='git'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -109,7 +122,30 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH=$PATH:/opt/arm-islero-linux-gnueabi/bin
+export PATH=$PATH:/sbin:/opt/arm-islero-linux-gnueabi-v4/bin:/opt/arm-islero-linux-gnueabihf-v3/bin:/home/ltourlonias/ifc:/home/ltourlonias/android/android-studio/bin:/home/ltourlonias/platform-tools/platform-tools:/opt/gcc-arm-none-eabi-4_6-2012q2/bin:/opt/gradle/gradle-4.1/bin
 export ARCH=arm
-export CROSS_COMPILE=arm-islero-linux-gnueabi-
+export CROSS_COMPILE=arm-islero-linux-gnueabihf-
 export LANG=en_US.utf8
+
+# BuildSystem environment
+export BS_HOME=/home/ltourlonias/BuildSystem
+export BS_DATA=/home/ltourlonias/BuildSystem/workspace
+export PATH=$PATH:$BS_HOME/build_system_tools/linux_cmd
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+#sudo mount -t cifs //frsnprfil1/cvsworkshop /mnt/w
+#sudo mount -t cifs //frsnprfil1/Projets /mnt/p
+#sudo mount -t cifs //frsnprtemp/Temporaire /mnt/m
+#sudo mount -t cifs //10.23.3.23/home/ltourlonias /mnt/z
+
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias FUCK)
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$PATH:/BuildSystem/.buildSystemTools/IngeDev/currentIngedevVersion
+
+# fix android AOSP build on new OSes
+export LC_ALL=C
