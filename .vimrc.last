@@ -16,3 +16,5 @@ nnoremap <silent> !
 nnoremap <silent> * 
     \ :<C-u>Unite -buffer-name=search%`bufnr('%')`
     \ -auto-preview -start-insert -input=<C-r><C-w> line<CR>
+
+source cscope_maps.vim
